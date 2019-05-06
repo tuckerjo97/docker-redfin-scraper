@@ -6,4 +6,4 @@ To run scraper with outputs to logs:
 
 To docker image with outputs to folder on host machine:
 
-```docker run --privileged -p 4000:4000 -d -it -v $(pwd):PATH_TO_YOUR_FOLDER 15tuckerjo/docker-scraper```
+```docker run --privileged -p 4000:4000 -d -it -v $(pwd):/usr/src/app/data 15tuckerjo/docker-scraper```

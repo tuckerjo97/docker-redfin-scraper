@@ -48,7 +48,7 @@ def get_request_handler(url, zip):
     data = pd.read_csv(io.StringIO(r.decode('utf-8')))
     print(zip, ' len:', len(data))
     name = 'data/' + str(zip) +'.csv'
-    data.to_csv(path_or_buf=name)
+    # data.to_csv(path_or_buf=name)
     return data
 
 def append_master_file(data, n):
